@@ -7,7 +7,7 @@ export default function Card(props) {
         <div className="card">
             <div className="card-img-container">
                 <img 
-                    src={Katie} 
+                    src={`/public/assets/${props.img}`} 
                     className="card-img"
                     alt="Image of katie"
                 />
@@ -21,7 +21,7 @@ export default function Card(props) {
                 />
                 <span className="card-review-avg">&nbsp;{props.rating}</span>                
                 <span className="card-review-count gray">({props.reviewCount})&nbsp;•</span>
-                <span className="card-country gray">&nbsp;{props.country}</span>                
+                <span className="card-country gray">&nbsp;{props.location}</span>                
             </div>
             <h2 className="card-title">
                 {props.title}
