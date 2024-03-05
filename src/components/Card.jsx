@@ -2,6 +2,7 @@ import React from "react"
 import Star from "/public/assets/Star.png"
 
 export default function Card(props) {
+    props = props.item;
     let badgeText
     if (props.openspots === 0) {
         badgeText = "SOLD OUT"
@@ -12,7 +13,7 @@ export default function Card(props) {
         <div className="card">
             <div className="card-img-container">
                 <img 
-                    src={`/public/assets/${props.img}`} 
+                    src={`/public/assets/${props.coverImg}`} 
                     className="card-img"
                     alt="Image of katie"
                 />
@@ -24,8 +25,8 @@ export default function Card(props) {
                     className="card-star" 
                     alt="star icon"
                 />
-                <span className="card-review-avg">&nbsp;{props.rating}</span>                
-                <span className="card-review-count gray">({props.reviewCount})&nbsp;•</span>
+                <span className="card-review-avg">&nbsp;{props.stats.rating}</span>                
+                <span className="card-review-count gray">({props.stats.reviewCount})&nbsp;•</span>
                 <span className="card-country gray">&nbsp;{props.location}</span>                
             </div>
             <h2 className="card-title">

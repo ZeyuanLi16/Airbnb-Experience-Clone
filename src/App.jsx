@@ -13,13 +13,7 @@ export default function App() {
           {Cards.map(c => 
             <Card 
               key={c.id}
-              img={c.coverImg}
-              rating={c.stats.rating}
-              reviewCount={c.stats.reviewCount}
-              location={c.location}
-              title={c.title}
-              price={c.price}
-              openspots={c.openSpots}
+              item={c}
             />
           )}
         </section>
