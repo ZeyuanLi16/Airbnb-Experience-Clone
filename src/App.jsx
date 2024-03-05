@@ -19,6 +19,7 @@ export default function App() {
               location={c.location}
               title={c.title}
               price={c.price}
+              openspots={c.openSpots}
             />
           )}
         </section>

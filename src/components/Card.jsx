@@ -1,8 +1,13 @@
 import React from "react"
-import Katie from "/public/assets/katie.png"
 import Star from "/public/assets/Star.png"
 
 export default function Card(props) {
+    let badgeText
+    if (props.openspots === 0) {
+        badgeText = "SOLD OUT"
+    } else if (props.location === "Online") {
+        badgeText = "ONLINE"
+    }
     return (
         <div className="card">
             <div className="card-img-container">
@@ -11,7 +16,7 @@ export default function Card(props) {
                     className="card-img"
                     alt="Image of katie"
                 />
-                <p>Sold Out</p>
+                {badgeText && <p>{badgeText}</p>}
             </div>
             <div className="card-info">
                 <img 

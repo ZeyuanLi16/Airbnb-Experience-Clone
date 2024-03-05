@@ -81,11 +81,13 @@ section {
 
 .card-img-container > p {
   position: absolute;
-  top: 8px;
-  left: 8px;
   margin: 0;
-  border: 1px solid black ;
+  top: 6px;
+  left: 6px;
   background-color: white;
+  padding: 5px 7px;
+  border-radius: 2px;
+  font-weight: bold;
 }
 
 .card-info {
