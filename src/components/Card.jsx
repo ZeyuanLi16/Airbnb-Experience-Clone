@@ -2,7 +2,7 @@ import React from "react"
 import Katie from "../assets/katie.png"
 import Star from "../assets/Star.png"
 
-export default function Card() {
+export default function Card(props) {
     return (
         <div className="card">
             <div className="card-img-container">
@@ -19,15 +19,15 @@ export default function Card() {
                     className="card-star" 
                     alt="star icon"
                 />
-                <span className="card-review-avg">&nbsp;5.0</span>                
-                <span className="card-review-count gray">(6)&nbsp;•</span>
-                <span className="card-country gray">&nbsp;USA</span>                
+                <span className="card-review-avg">&nbsp;{props.rating}</span>                
+                <span className="card-review-count gray">({props.reviewCount})&nbsp;•</span>
+                <span className="card-country gray">&nbsp;{props.country}</span>                
             </div>
             <h2 className="card-title">
-                Life lessons with Katie Zaferes
+                {props.title}
             </h2>
             <p className="card-price">
-                <strong>From $136</strong> / person
+                <strong>From ${props.price}</strong> / person
             </p>
         </div>
     )
