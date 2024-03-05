@@ -13,7 +13,7 @@ export default function App() {
           {Cards.map(c => 
             <Card 
               key={c.id}
-              item={c}
+              {...c}
             />
           )}
         </section>

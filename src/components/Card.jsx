@@ -2,7 +2,6 @@ import React from "react"
 import Star from "/public/assets/Star.png"
 
 export default function Card(props) {
-    props = props.item;
     let badgeText
     if (props.openspots === 0) {
         badgeText = "SOLD OUT"
