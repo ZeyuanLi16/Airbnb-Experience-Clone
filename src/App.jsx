@@ -12,6 +12,7 @@ export default function App() {
         <section className="cards-list">
           {Cards.map(c => 
             <Card 
+              key={c.id}
               img={c.coverImg}
               rating={c.stats.rating}
               reviewCount={c.stats.reviewCount}
