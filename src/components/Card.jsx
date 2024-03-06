@@ -1,5 +1,5 @@
 import React from "react"
-import Star from "/public/assets/Star.png"
+import Star from "/assets/Star.png"
 
 export default function Card(props) {
     let badgeText
@@ -12,7 +12,7 @@ export default function Card(props) {
         <div className="card">
             <div className="card-img-container">
                 <img 
-                    src={`/public/assets/${props.coverImg}`} 
+                    src={`/assets/${props.coverImg}`} 
                     className="card-img"
                     alt="Image of katie"
                 />
