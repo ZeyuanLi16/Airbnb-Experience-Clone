@@ -14,26 +14,38 @@ A simple React project with one page cloning Airbnb Experience. Learning basic c
 
 - **About Vite**: [Vite](https://vitejs.dev/) is a modern frontend build tool that provides fast server start, overall faster builds on React, thanks to its use of native ES modules in the development.
 
-1. **Creating the project**:
-   ```sh
-   npm create vite@latest
-   ```
+    1. Creating the project:
+    ```sh
+    npm create vite@latest
+    ```
 
-2. **Navigating to your project folder**:
-   ```sh
-   cd my-react-app
-   ```
+    2. Navigating to your project folder:
+    ```sh
+    cd my-react-app
+    ```
 
-3. **Installing dependencies**:
-   ```sh
-   npm install
-   ```
+    3. Installing dependencies:
+    ```sh
+    npm install
+    ```
 
-4. **Starting the development server**:
-   ```sh
-   npm run dev
-   ```
+    4. Starting the development server:
+    ```sh
+    npm run dev
+    ```
 
+- **[Static Asset Handling](https://vitejs.dev/guide/assets.html)**: 
+  * Handling images, css files under the `/src` folder, they have to be imported before use. For example `/src/index.css`:
 
-## Usage
+    ```js
+    import './index.css'
+    ```
+
+  * Assets in `/public` folder can be used without importing. For image `/public/assets/mountain-bike.png`:
+
+    ```js
+    <img src='/assets/mountain-bike.png' />
+    ```
+
+## Preview
 ![alt text](screenshot.png)
