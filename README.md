@@ -1,6 +1,6 @@
 # Airbnb Experience Clone
 
-A simple React project with one page cloning Airbnb Experience. Learning basic concepts in React.
+A simple React project with one static page cloning Airbnb Experience. Learning basic concepts in React.
 
 ## Concepts in React Development
 
